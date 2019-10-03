@@ -59,8 +59,21 @@ body {
 }
 
 .p {
-    font-size: 24pt;
+    font-size: 2VW;
     font-style: bold;
+    text-align: left;
+    position:left;
+    padding-left: 2.5vw;
+    padding-top:2.5vh;
+}
+
+.p:hover {
+    color: #ac80ff;
+    font-style: italic;
+}
+
+.rect: {
+  height: 20vh;
 }
 
 .container {
@@ -209,6 +222,48 @@ body {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+  opacity: 1;
+  padding-right: 0px;
+}
+
+.accordion1 {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  opacity: 1;
+  padding-left: 60px;
+}
+
+.active, .accordion:hover {
+  color:#ac80ff; font-style: italic; ; 
+
+}
+
+.panel {
+  padding: 0 10px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 350px) {
